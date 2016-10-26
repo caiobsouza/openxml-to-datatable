@@ -1,0 +1,8 @@
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\bin\Debug\DataTablesSML.dll
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\bin\Debug\DataTablesSML.pdb
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\bin\Debug\DocumentFormat.OpenXml.dll
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\bin\Debug\DocumentFormat.OpenXml.xml
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\obj\Debug\DataTablesSML.csprojResolveAssemblyReference.cache
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\obj\Debug\DataTablesSML.dll
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\obj\Debug\DataTablesSML.pdb
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\bin\Debug\WindowsBase.dll

@@ -1,0 +1,7 @@
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\bin\Release\DocumentFormat.OpenXml.dll
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\bin\Release\WindowsBase.dll
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\bin\Release\DocumentFormat.OpenXml.xml
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\bin\Release\DataTablesSML.dll
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\bin\Release\DataTablesSML.pdb
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\obj\Release\DataTablesSML.dll
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\obj\Release\DataTablesSML.pdb

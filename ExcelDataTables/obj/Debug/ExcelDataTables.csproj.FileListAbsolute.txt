@@ -1,0 +1,5 @@
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\ExcelDataTables\bin\Debug\ExcelDataTables.dll
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\ExcelDataTables\bin\Debug\ExcelDataTables.pdb
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\ExcelDataTables\obj\Debug\ExcelDataTables.csprojResolveAssemblyReference.cache
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\ExcelDataTables\obj\Debug\ExcelDataTables.dll
+c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\ExcelDataTables\obj\Debug\ExcelDataTables.pdb
