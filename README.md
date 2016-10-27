@@ -37,7 +37,7 @@ string filename = string.Format("{0:yyyyMMddhhmmss}.xlsx");
 
 Response.Clear();
 Response.Buffer = true;
-Response.AddHeader("content-disposition", "attachment;filename=" + filename);
+Response.AddHeader("content-disposition", $"attachment;filename={filename}");
 Response.ContentEncoding = Encoding.GetEncoding("Windows-1252");
 Response.Charset = "UTF-8";
 Response.ContentType = "application/vnd.ms-excel";
