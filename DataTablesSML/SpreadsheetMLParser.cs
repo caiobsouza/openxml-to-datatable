@@ -39,7 +39,8 @@ namespace DataTablesSML
         /// </summary>
         /// <param name="dataTable">DataTable that will be parsed</param>
         /// <param name="destFolder">Destination folder</param>
-        /// <param name="workSheetName">Name of sheet</param>
+        /// <param name="fileName">Optional. If null or not defined, the file name will be DateTime.Now</param>
+        /// <param name="workSheetName">Sheet name</param>
         /// <returns>Returns the path of the generated .xlsx file</returns>
         public string ExportSpreadsheet(DataTable dataTable, string destFolder, string fileName = null, string workSheetName = "Sheet 01")
         {
@@ -84,6 +85,12 @@ namespace DataTablesSML
             return FilePath;
         }
 
+        /// <summary>
+        /// Exports DataTable to an OpenXML Spreadsheet and write to MemoryStream
+        /// </summary>
+        /// <param name="dataTable">DataTable that will be parsed</param>
+        /// <param name="stream">MemoryStream object</param>
+        /// <param name="workSheetName">Sheet name</param>
         public void ExportSpreadsheet(DataTable dataTable, ref MemoryStream stream, string workSheetName = "Sheet 01")
         {
             CurrentDataTable = dataTable;
