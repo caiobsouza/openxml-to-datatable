@@ -43,8 +43,9 @@ Response.End();
 ### Read OpenXML Spreadsheet file (xslx) to DataTable
 
 ```
-//<asp:FileUpload ID="fileUploadControl" ... />
+ //<asp:FileUpload ID="fileUploadControl" ... />
  Stream fileStream = new MemoryStream(fileUploadControl.FileBytes);
  
+ //true parameter indicates if spreadsheet has headers at first row
  DataTable xlsDataTable = new DataTablesSML.SpreadsheetMLParser().ImportSpreadsheet(fileStream, true);
 ```
