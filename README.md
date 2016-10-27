@@ -63,3 +63,9 @@ Response.End();
  //true parameter indicates if spreadsheet has headers at first row
  DataTable xlsDataTable = new DataTablesSML.SpreadsheetMLParser().ImportSpreadsheet(fileStream, true);
 ```
+
+### More information
+#### About OpenXML SDK
+* MSDN Article: https://msdn.microsoft.com/en-us/library/office/bb448854.aspx
+* Download: https://www.microsoft.com/en-us/download/details.aspx?id=30425
+
