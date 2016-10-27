@@ -1,4 +1,4 @@
-# sheet-datatables
+# openxml-to-datatable
 Converts OpenXML Spreadsheets files to DataTable objects and vice versa.
 
 ## Dependencies
