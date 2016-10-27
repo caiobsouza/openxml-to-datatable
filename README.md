@@ -41,3 +41,10 @@ Response.End();
 ```
 
 ### Read OpenXML Spreadsheet file (xslx) to DataTable
+
+```
+//<asp:FileUpload ID="fileUploadControl" ... />
+ Stream fileStream = new MemoryStream(fileUploadControl.FileBytes);
+ 
+ DataTable xlsDataTable = new DataTablesSML.SpreadsheetMLParser().ImportSpreadsheet(fileStream, true);
+```
