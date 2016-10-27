@@ -1,5 +1,5 @@
 # sheet-datatables
-convert OpenXML Spreadsheets files to DataTable objects and vice versa.
+Converts OpenXML Spreadsheets files to DataTable objects and vice versa.
 
 ## Dependencies
 * WindowsBase.dll
