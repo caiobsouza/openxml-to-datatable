@@ -41,11 +41,12 @@ namespace DataTablesSML
         /// <param name="destFolder">Destination folder</param>
         /// <param name="workSheetName">Name of sheet</param>
         /// <returns>Returns the path of the generated .xlsx file</returns>
-        public string ExportSpreadsheet(DataTable dataTable, string destFolder, string workSheetName = "Sheet 01")
+        public string ExportSpreadsheet(DataTable dataTable, string destFolder, string fileName = null, string workSheetName = "Sheet 01")
         {
             CurrentDataTable = dataTable;
 
-            string fileName = string.Format("{0:yyyyMMdd_HHmmss}", DateTime.Now);
+            if (string.IsNullOrEmpty(fileName))
+                fileName = string.Format("{0:yyyyMMdd_HHmmss}", DateTime.Now);
 
             if (!destFolder.EndsWith("\\"))
                 destFolder += '\\';
@@ -87,10 +88,8 @@ namespace DataTablesSML
         {
             CurrentDataTable = dataTable;
 
-            string fileName = string.Format("{0:yyyyMMdd_HHmmss}", DateTime.Now);
-
             FilePath = nameof(MemoryStream);
-            
+
             var spreadsheetDocument = SpreadsheetDocument.Create(stream, SpreadsheetDocumentType.Workbook);
 
             // Add a WorkbookPart to the document.
@@ -120,7 +119,7 @@ namespace DataTablesSML
             spreadsheetDocument.Close();
             spreadsheetDocument.Dispose();
 
-            
+
         }
 
         /// <summary>
@@ -141,7 +140,7 @@ namespace DataTablesSML
             {
                 string path = filePathOrStream.ToString();
                 document = SpreadsheetDocument.Open(Path.GetFullPath(path), false);
-                FilePath = path;                
+                FilePath = path;
             }
             else
                 throw new ArgumentException("Argument must be Stream or Path string.");
@@ -149,9 +148,9 @@ namespace DataTablesSML
 
             this.WorkbookPart = document.WorkbookPart;
             Sheet sheet = WorkbookPart.Workbook.Sheets.GetFirstChild<Sheet>();
-            this.WorksheetPart = this.WorkbookPart.GetPartById(sheet.Id.Value) as WorksheetPart;            
+            this.WorksheetPart = this.WorkbookPart.GetPartById(sheet.Id.Value) as WorksheetPart;
             Worksheet worksheet = this.WorksheetPart.Worksheet;
-            
+
             var rows = worksheet.GetFirstChild<SheetData>().Descendants<Row>();
 
             var headers = new List<string>();

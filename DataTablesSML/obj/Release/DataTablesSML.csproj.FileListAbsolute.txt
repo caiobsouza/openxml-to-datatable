@@ -5,3 +5,4 @@ c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTa
 c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\bin\Release\DataTablesSML.pdb
 c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\obj\Release\DataTablesSML.dll
 c:\users\caio.souza\documents\visual studio 2015\Projects\ExcelDataTables\DataTablesSML\obj\Release\DataTablesSML.pdb
+C:\Users\caio.souza\Documents\Visual Studio 2015\Projects\ExcelDataTables\DataTablesSML\obj\Release\DataTablesSML.csprojResolveAssemblyReference.cache
