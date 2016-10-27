@@ -12,14 +12,28 @@ var dataTable = new DataTable();
 
 var spreadsheetMLParser = new DataTablesSML.SpreadsheetMLParser();
 //Returns the generated file's path.
-string filePath = spreadsheetMLParser.ExportSpreadsheet(dataTable, @"C:\Temp", "Sheet1");
+string filePath = spreadsheetMLParser.ExportSpreadsheet(dataTable, @"C:\Temp");
+```
+
+#### Optional #1: Set file name. If you don't (or pass null), the file name will be DateTime.Now
+```
+string filePath = spreadsheetMLParser.ExportSpreadsheet(dataTable, @"C:\Temp", "mySheet");
+```
+#### Optional #2: Set sheet name
+```
+string filePath = spreadsheetMLParser.ExportSpreadsheet(dataTable, @"C:\Temp", null, "Sheet 01");
+```
+
+#### Complete Usage
+```
+string filePath = spreadsheetMLParser.ExportSpreadsheet(dataTable, @"C:\Temp", "MySheetFile", "Sheet 01");
 ```
 
 ### Read DataTable to MemoryStream
 Useful when working with ASP.NET
 
 ```
-string filename = DateTime.Now.ToString("yyyyMMddhhmmss") + ".xlsx";
+string filename = string.Format("{0:yyyyMMddhhmmss}.xlsx");
 
 Response.Clear();
 Response.Buffer = true;
